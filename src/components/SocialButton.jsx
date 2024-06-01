@@ -1,6 +1,6 @@
-import facebooktLogo from "../img/001-facebook.png";
-import linkedinLogo from "../img/002-linkedin-logo.png";
-import githubLogo from "../img/003-github.png";
+import facebooktLogo from "../assets/img/001-facebook.png";
+import linkedinLogo from "../assets/img/002-linkedin-logo.png";
+import githubLogo from "../assets/img/003-github.png";
 
 function SocialButton() {
   return (
