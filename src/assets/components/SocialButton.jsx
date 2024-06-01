@@ -6,13 +6,13 @@ function SocialButton() {
   return (
     <div>
       <a href="https://www.facebook.com/" target="_blank">
-        <img src={facebooktLogo} className="logo" alt="Vite logo" />
+        <img src={facebooktLogo} className="logo" alt="Facebook icon" />
       </a>
       <a href="https://www.linkedin.com/" target="_blank">
-        <img src={linkedinLogo} className="logo react" alt="React logo" />
+        <img src={linkedinLogo} className="logo" alt="LinkdIn icon" />
       </a>
       <a href="https://github.com" target="_blank">
-        <img src={githubLogo} className="logo react" alt="React logo" />
+        <img src={githubLogo} className="logo" alt="Github icon" />
       </a>
     </div>
   );
