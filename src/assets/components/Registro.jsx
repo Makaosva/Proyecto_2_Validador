@@ -6,8 +6,8 @@ function Registro() {
     <div className="card">
       <h1>Crear una cuenta</h1>
       <SocialButton />
+      <h3>O usa tu email para registrarte</h3>
       {/*}  <Formulario />*/}
-      
     </div>
   );
 }
