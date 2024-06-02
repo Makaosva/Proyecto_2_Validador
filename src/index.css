@@ -28,7 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: lightgreen;
+  background: linear-gradient(#51d981, #3416dd);
 }
 
 h1 {
@@ -66,4 +66,15 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.barra-input {
+  margin-bottom: 15px;
+  height: 25px;
+  width: 300px;
+}
+
+.boton {
+  margin-bottom: 20px;
+  width: 150px;
 }
