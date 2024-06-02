@@ -1,4 +1,5 @@
 import "./App.css";
+
 import Registro from "./components/Registro";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Registro />
     </>
   );
+
 }
 
 export default App;
