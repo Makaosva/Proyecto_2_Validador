@@ -18,6 +18,12 @@ const Formulario = () => {
      // Estado para la confirmación del envío
      const [enviado, setEnviado] = useState(false);
 
+     // Restablecer el estado de enviado a false cuando se cambia algún campo
+     const handleChange = (setter) => (e) => {
+        setter(e.target.value);
+        setEnviado(false); 
+    };
+
     const validarDatos = (e) => {
         e.preventDefault();
 
@@ -61,7 +67,7 @@ const Formulario = () => {
                     type="text"
                     name="nombre"
                     className="form-control"
-                    onChange={(e) => setNombre(e.target.value)}
+                    onChange= {handleChange(setNombre)}
                     value={nombre}
                     placeholder="Nombre"
                 />
@@ -71,7 +77,7 @@ const Formulario = () => {
                     type="email"
                     name="email"
                     className="form-control"
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange= {handleChange(setEmail)}
                     value={email}
                     placeholder="TuEmail@email.com"
                 />
@@ -81,7 +87,7 @@ const Formulario = () => {
                     type="password"
                     name="password"
                     className="form-control"
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={handleChange(setPassword)}
                     value={password}
                     placeholder="Password"
                 />
@@ -91,7 +97,7 @@ const Formulario = () => {
                     type="password"
                     name="confirmar"
                     className="form-control"
-                    onChange={(e) => setConfirmar(e.target.value)}
+                    onChange={handleChange(setConfirmar)}
                     value={confirmar}
                     placeholder="Confirma tu Password"
                 />
